@@ -7,7 +7,7 @@ const ContactForm = () => {
             sx={{
                 display: 'inline-flex',
                 displayDirection: 'row',
-                padding: '70px',
+                padding: '30px 70px 0 0 ',
             }}>
             <FormControl className='--form-control--card'>
                 <Typography

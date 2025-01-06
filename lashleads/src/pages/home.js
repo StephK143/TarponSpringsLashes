@@ -8,8 +8,7 @@ function HomePage() {
         <Grid2
             container
             sx={{
-                height: '100vh',
-                minHeight: '100vh',
+                minHeight: '80vh',
                 backgroundImage: `url(${cover})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
