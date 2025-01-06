@@ -1,18 +1,19 @@
 import { Box, FormControl } from "@mui/material";
 import React from "react";
+import './index.css';
 
 const ContactForm = () => {
     return (
         <Box className='container'
             sx={{
                 display: 'inline-flex',
-                displayDirection: 'column',
+                displayDirection: 'row',
             }}>
-            <div>
+            <FormControl className='--form-control--card formField'>
                 <h2> Contact Emily</h2>
-            </div>
-            <FormControl className='--form-control--card'>
-                <input type='text'
+                <input
+                    className="formField"
+                    type='text'
                     placeholder='Full Name'
                     name='user_name' required />
                 <input type='email'
