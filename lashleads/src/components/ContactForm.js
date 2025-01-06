@@ -12,18 +12,13 @@ const ContactForm = () => {
             <FormControl className='--form-control--card'>
                 <Typography> Contact Emily</Typography>
                 <TextField
-                    label="Full Name" variant="outlined" required />
+                    label="Full Name" required sx={{ padding: '.15rem'}} />
                 <TextField
-                    type='email'
-                    placeholder='Email'
-                    name='user_email' required />
+                    label='Email' required sx={{ padding: '.15rem'}} />
                 <TextField
-                    type='subject'
-                    placeholder='Subject'
-                    name='subject' required />
+                    label='Subject' sx={{ padding: '.15rem'}} />
                 <TextField
-                    name='message'
-                    placeholder='Message' required />
+                    label='Message' sx={{ padding: '.15rem'}} />
                 <Button variant="contained"
                     sx={{
                         backgroundColor: '#b76e79',
