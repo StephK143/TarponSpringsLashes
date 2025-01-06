@@ -2,3 +2,8 @@
     border-radius: '50px';
     padding: '10px';
 }
+
+.submitBtn {
+    color: '#b76e79';
+    border-radius: '50px';
+}
