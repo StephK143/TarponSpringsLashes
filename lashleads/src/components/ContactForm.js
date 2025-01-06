@@ -1,5 +1,6 @@
 import { Box, Button, FormControl, TextField, Typography } from "@mui/material";
 import React from "react";
+import { validateRecipientEmail } from './ContactFormHelper'
 
 const ContactForm = () => {
     return (
@@ -18,7 +19,12 @@ const ContactForm = () => {
                 <TextField
                     label="Full Name" required sx={{ padding: '.15rem' }} />
                 <TextField
-                    label='Email' required sx={{ padding: '.15rem' }} />
+                    label='Email' 
+                    required 
+                    onChange={(e) => {
+                        validateRecipientEmail(e.target.value);
+                      }}
+                    sx={{ padding: '.15rem' }} />
                 <TextField
                     label='Subject' sx={{ padding: '.15rem' }} />
                 <TextField

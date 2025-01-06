@@ -10,13 +10,13 @@ const AppHeader = () => {
                 top: 0,
                 backgroundColor: '#767676',
                 color: 'white',
-                padding: '10px 20px',
+                padding: '.6rem 4rem .6rem 1rem',
                 textAlign: 'center',
                 minHeight: '20%',
                 display: 'flex',
             }}>
             <Toolbar>
-                <Typography variant="h6" style={{ flexGrow: 1 }}>
+                <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'left' }}>
                     Lashes By Emily
                 </Typography>
                 <Button color="inherit">Home</Button>
