@@ -1,39 +1,37 @@
-import { Box, FormControl } from "@mui/material";
+import { Box, Button, FormControl, styled, TextField, Typography } from "@mui/material";
 import React from "react";
-import './index.css';
 
 const ContactForm = () => {
     return (
-        <Box className='container'
+        <Box component="form"
             sx={{
                 display: 'inline-flex',
                 displayDirection: 'row',
                 padding: '75px',
             }}>
             <FormControl className='--form-control--card'>
-                <h2> Contact Emily</h2>
-                <input
-                    className="formField"
-                    type='text'
-                    placeholder='Full Name'
-                    name='user_name' required />
-                <input
-                    className="formField"
+                <Typography> Contact Emily</Typography>
+                <TextField
+                    label="Full Name" variant="outlined" required />
+                <TextField
                     type='email'
                     placeholder='Email'
                     name='user_email' required />
-                <input 
-                className="formField"
-                type='subject'
+                <TextField
+                    type='subject'
                     placeholder='Subject'
                     name='subject' required />
-                <textarea 
-                className="formField"
-                name='message'
+                <TextField
+                    name='message'
                     placeholder='Message' required />
-                <button className="--btn submitBtn">
-                    Send Message
-                </button>
+                <Button variant="contained"
+                    sx={{
+                        backgroundColor: '#b76e79',
+                        borderRadius: '50px'
+                    }}>Send Message</Button>
+                <Button sx={{ color: 'black' }}>
+                    Clear Form
+                </Button>
             </FormControl>
         </Box>
     )

@@ -17,7 +17,7 @@ const AppHeader = () => {
             }}>
             <Toolbar>
                 <Typography variant="h6" style={{ flexGrow: 1 }}>
-                    My Website
+                    Lashes By Emily
                 </Typography>
                 <Button color="inherit">Home</Button>
                 <Button color="inherit">Gallery</Button>
