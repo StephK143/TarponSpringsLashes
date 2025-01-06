@@ -1,13 +1,17 @@
-import { Box } from "@mui/material";
+import { Box, FormControl } from "@mui/material";
 import React from "react";
 
 const ContactForm = () => {
     return (
-        <Box className='container'>
+        <Box className='container'
+            sx={{
+                display: 'inline-flex',
+                displayDirection: 'column',
+            }}>
             <div>
                 <h2> Contact Emily</h2>
             </div>
-            <form className='--form-control--card'>
+            <FormControl className='--form-control--card'>
                 <input type='text'
                     placeholder='Full Name'
                     name='user_name' required />
@@ -22,7 +26,7 @@ const ContactForm = () => {
                 <button className="--btn --btn-primary">
                     Send Message
                 </button>
-            </form>
+            </FormControl>
         </Box>
     )
 }

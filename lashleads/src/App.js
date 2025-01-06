@@ -6,10 +6,10 @@ import AppFooter from './components/AppFooter';
 
 function App() {
   return (
-    <div className="App">
-      <AppHeader />
-      <HomePage />
-      <AppFooter />
+    <div className="app" height="100%" width="100%">
+      <AppHeader className="header"/>
+      <HomePage className="content" />
+      <AppFooter className="footer"/>
     </div>
   );
 }
