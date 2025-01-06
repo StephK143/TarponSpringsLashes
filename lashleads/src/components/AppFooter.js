@@ -3,7 +3,7 @@ import { Box, Grid2, Typography, Link } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box 
+    <Box
       component="footer"
       sx={{
         position: 'fixed',
@@ -16,17 +16,27 @@ const Footer = () => {
         height: '10%',
       }}
     >
-      <Grid2 container spacing={3}>
-        <Grid2 item xs={12} sm={4}>
+      <Grid2 container spacing={2}>
+        <Grid2 item xs={12} sm={4} size={4}>
           <Typography variant="h6">About Emily</Typography>
           <Typography variant="body2">Some information about the company.</Typography>
         </Grid2>
-        <Grid2 item xs={12} sm={4}>
+        <Grid2 item xs={12} sm={4} size={4}>
           <Typography variant="h6">Quick Links</Typography>
-          <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Home</Link>
-          <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Contact</Link>
+          <Grid2
+            item xs={12} sm={4}
+            spacing={3}
+            container direction="row"
+            sx={{
+              justifyContent: "center",
+              alignItems: "center"
+            }}>
+            <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Home</Link>
+            <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Gallery</Link>
+            <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>About</Link>
+          </Grid2>
         </Grid2>
-        <Grid2 item xs={12} sm={4}>
+        <Grid2 item xs={12} sm={4} size={4}>
           <Typography variant="h6">Follow Me</Typography>
           <Link href="#" color="inherit" sx={{ margin: '0 10px' }}>Facebook</Link>
           <Link href="#" color="inherit" sx={{ margin: '0 10px' }}>Twitter</Link>
