@@ -8,7 +8,7 @@ import AppRouter from './appRouter'
 
 function App() {
   return (
-    <Box className="app" height="100%" width="100%">
+    <Box className="app" sx={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <AppHeader className="header" />
       <AppRouter />
       <AppFooter className="footer" />

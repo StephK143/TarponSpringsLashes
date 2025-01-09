@@ -12,8 +12,7 @@ const AppHeader = () => {
                 color: 'white',
                 padding: '.6rem 4rem .6rem 1rem',
                 textAlign: 'center',
-                minHeight: '20%',
-                display: 'flex',
+                padding: '20px 0',
             }}>
             <Toolbar>
                 <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'left' }}>
