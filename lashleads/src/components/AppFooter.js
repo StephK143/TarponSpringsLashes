@@ -31,9 +31,9 @@ const Footer = () => {
               justifyContent: "center",
               alignItems: "center"
             }}>
-            <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Home</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Gallery</Link>
-            <Link href="#" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>About</Link>
+            <Link href="/" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Home</Link>
+            <Link href="/gallery" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>Gallery</Link>
+            <Link href="/about" color="inherit" sx={{ display: 'block', marginBottom: '5px' }}>About</Link>
           </Grid2>
         </Grid2>
         <Grid2 item xs={12} sm={4} size={4}>

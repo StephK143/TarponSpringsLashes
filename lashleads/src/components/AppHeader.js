@@ -19,9 +19,9 @@ const AppHeader = () => {
                 <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'left' }}>
                     Lashes By Emily
                 </Typography>
-                <Button href='./'  color="inherit">Home</Button>
-                <Button color="inherit">Gallery</Button>
-                <Button color="inherit">About</Button>
+                <Button href='/'  color="inherit">Home</Button>
+                <Button href='/gallery' color="inherit">Gallery</Button>
+                <Button href='/about' color="inherit">About</Button>
             </Toolbar>
         </AppBar>
     );
