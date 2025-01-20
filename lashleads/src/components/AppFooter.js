@@ -1,19 +1,17 @@
 import React from 'react';
 import { Box, Grid2, Typography, Link } from '@mui/material';
 
-const Footer = () => {
-  return (
+const AppFooter = () => (
     <Box
-      component="footer"
-      sx={{
-        position: 'fixed',
-        bottom: 0,
-        backgroundColor: '#767676',
-        color: 'white',
-        padding: '20px 0',
-        textAlign: 'center',
-        width: '100%',
-      }}
+    component='footer'
+    sx={{
+     
+      backgroundColor: '#767676',
+      color: 'white',
+      textAlign: 'center',
+      width: '100%',
+    }}
+      
     >
       <Grid2 container spacing={2}>
         <Grid2 item xs={12} sm={4} size={4}>
@@ -46,7 +44,6 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Karlsen Designs. All Rights Reserved.
       </Typography>
     </Box>
-  );
-};
+);
 
-export default Footer;
+export default AppFooter;

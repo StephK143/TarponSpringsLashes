@@ -6,8 +6,7 @@ export const AboutData =
 
 export const LocationData = 
     {
-        locationDescription: "Within 20 mile of Tarpon Springs, FL.",
-        locationMap: "Find a map API for this"
+        locationDescription: "124 E Lemon St, Tarpon Springs, FL 34689"
     }
 
 export const testimonials =
