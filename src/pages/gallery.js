@@ -9,12 +9,7 @@ function galleryPage() {
       <Grid2
          className='content'
          container
-         spacing={2}
-         sx={{
-            backgroundImage: `url(${cover})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-         }}>
+         spacing={2}>
          <Grid2 item xs={12} sm={4} size={4}>This is the left</Grid2>
          <Grid2 item xs={12} sm={4} size={4} sx={{ justifyContent: 'flex-end' }}><ContactForm /></Grid2>
       </Grid2>
