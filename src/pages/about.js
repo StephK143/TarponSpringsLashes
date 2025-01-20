@@ -42,8 +42,10 @@ const aboutPage = () => {
                         component='img'
                         role='button'
                         sx={{
-                           height: 200,
-                           width: 200,
+                           display: 'block',
+                           ml: 'auto',
+                           mr: 'auto',
+                           width: '50%',
                         }}
                         alt="Map to Allure Salon."
                         src={salonMap}
