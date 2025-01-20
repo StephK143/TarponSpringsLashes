@@ -4,7 +4,7 @@ import { Box, Grid2, Typography, Link } from '@mui/material';
 const AppFooter = () => {
   return (
     <Box
-      className='footer'
+      className='appFooter'
       component='footer'>
       <Grid2 container spacing={2}>
         <Grid2 item xs={12} sm={4} size={4}>
