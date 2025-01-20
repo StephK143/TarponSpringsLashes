@@ -4,14 +4,8 @@ import { Box, Grid2, Typography, Link } from '@mui/material';
 const AppFooter = () => {
   return (
     <Box
-      component='footer'
-      sx={{
-        backgroundColor: '#767676',
-        color: 'white',
-        textAlign: 'center',
-        width: '100%',
-        justifyContent: 'space-between',
-      }}>
+      className='footer'
+      component='footer'>
       <Grid2 container spacing={2}>
         <Grid2 item xs={12} sm={4} size={4}>
           <Typography variant="h6">About Emily</Typography>
