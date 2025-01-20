@@ -26,5 +26,20 @@ export const testimonials =
             clientName: "Client 3",
             clientImage: "",
             clientReview: "Would recommend, 100%"
+        },
+        {
+            clientName: "Client 4",
+            clientImage: "",
+            clientReview: "Emily Rocks"
+        },
+        {
+            clientName: "Client 5",
+            clientImage: "",
+            clientReview: "Super! Super!"
+        },
+        {
+            clientName: "Client 6",
+            clientImage: "",
+            clientReview: "Would recommend, 100%"
         }
     ]

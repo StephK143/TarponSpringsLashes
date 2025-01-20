@@ -2,7 +2,6 @@ import { Box, List, ListItem, Grid2, Typography } from "@mui/material";
 import React from "react";
 import { AboutData, LocationData } from '../components/data';
 import ContactForm from "../components/ContactForm";
-import cover from '../assets/floral-background.png';
 import salonMap from '../assets/salon-map.png';
 
 const aboutPage = () => {

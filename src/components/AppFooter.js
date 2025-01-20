@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Grid2, Typography, Link } from '@mui/material';
+import ReviewCarousel from './ReviewCarousel';
 
 const AppFooter = () => {
   return (
@@ -9,7 +10,7 @@ const AppFooter = () => {
       <Grid2 container spacing={2}>
         <Grid2 item xs={12} sm={4} size={4}>
           <Typography variant="h6">About Emily</Typography>
-          <Typography variant="body2">Carasel</Typography>
+          <Typography variant="body2"><ReviewCarousel /></Typography>
         </Grid2>
         <Grid2 item xs={12} sm={4} size={4}>
           <Typography variant="h6">Quick Links</Typography>
