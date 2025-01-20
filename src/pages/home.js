@@ -1,21 +1,18 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import cover from '../assets/floral-background.png';
-import { Grid2 } from "@mui/material";
+import { Box, Grid2 } from "@mui/material";
 
 function HomePage() {
     return (
-        <Grid2
-            container
+        <Box container
             sx={{
-                minHeight: '80vh',
                 backgroundImage: `url(${cover})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
-                justifyContent: 'flex-end',
             }}>
             <ContactForm />
-        </Grid2>
+        </Box>
     )
 }
 

@@ -8,11 +8,9 @@ import AppFooter from './components/AppFooter';
 
 function App() {
   return (
-    <Box className="app" sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+    <Box className="app" container sx={{ display: 'flex', flexDirection: 'column' }}>
       <AppHeader />
-      <Box>
         <AppRouter />
-      </Box>
       <AppFooter />
     </Box>
   );
