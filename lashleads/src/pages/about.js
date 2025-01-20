@@ -17,6 +17,7 @@ const aboutPage = () => {
             backgroundSize: 'cover',
             flexDirection: 'row',
             display: 'flex',
+            justifyContent: 'space-between',
          }}>
          <List sx={{ flexDirection: 'column', width: '50%', justifyContent: 'flex-start' }}>
             <ListItem>
@@ -25,24 +26,33 @@ const aboutPage = () => {
             <ListItem>
                <Typography>{AboutData.longDescription}</Typography>
             </ListItem>
-            <ListItem>
-               <Typography>{LocationData.locationDescription}</Typography>
-            </ListItem>
-            <ListItem>
-               <Typography> {LocationData.locationMap}</Typography>
-            </ListItem>
-            <Box
-               component='img'
-               sx={{
-                  height: 233,
-                  width: 350,
-                  maxHeight: { xs: 233, md: 167 },
-                  maxWidth: { xs: 350, md: 250 },
-               }}
-               alt="Map to Allure Salon."
-               src={salonMap}/>
+            <Grid2 container sx={{ flexDirection: 'row' }}>
+               <Box sx={{ justifyContent: 'flex-start', flexDirection: 'column', width: '50%' }}>
+                  <Typography sx={{ whiteSpace: 'no-wrap' }}> {LocationData.locationAddress.split(',')}</Typography>
+               </Box>
+               <Box
+                  sx={{
+                     flexDirection: 'column',
+                     justifyContent: 'flex-end',
+                     width: '40%',
+                     cursor: 'pointer',
+                  }}>
+                  <a href={`${LocationData.locationMapLink}`} target="blank" rel="noopener noreferrer">
+                     <Box
+                        component='img'
+                        role='button'
+                        sx={{
+                           height: 200,
+                           width: 200,
+                        }}
+                        alt="Map to Allure Salon."
+                        src={salonMap}
+                     />
+                  </a>
+               </Box>
+            </Grid2>
          </List>
-         <List sx={{ flexDirection: 'column', justifyContent: 'flex-end', width: '50%' }}>
+         <List sx={{ flexDirection: 'column', justifyContent: 'flex-end', width: '40%' }}>
             <ContactForm />
          </List>
       </Grid2>

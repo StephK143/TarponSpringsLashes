@@ -8,7 +8,6 @@ const ContactForm = () => {
             sx={{
                 display: 'inline-flex',
                 displayDirection: 'row',
-                padding: '30px 70px 0 0 ',
             }}>
             <FormControl className='--form-control--card'>
                 <Typography
@@ -29,7 +28,7 @@ const ContactForm = () => {
                     label='Subject' sx={{ padding: '.15rem' }} />
                 <TextField
                     label='Message' sx={{ padding: '.15rem' }} />
-                <Box>
+                <Box sx={{ width: '100%' }}>
                     <Button variant="contained"
                         sx={{
                             color: 'black',
