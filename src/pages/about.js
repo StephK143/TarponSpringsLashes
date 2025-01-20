@@ -10,9 +10,8 @@ const aboutPage = () => {
    return (
       <Grid2
          className='content'
-         container
-         spacing={2}>
-         <Grid2 item xs={12} sm={4} size={4}> <List sx={{ flexDirection: 'column', width: '50%', justifyContent: 'flex-start' }}>
+         container>
+         <Grid2 className='leftContent' item xs={1} sm={1} size={4}> <List sx={{ flexDirection: 'column', width: '50%', justifyContent: 'center' }}>
             <ListItem>
                <Typography>{AboutData.shortDescription}</Typography>
             </ListItem>
@@ -45,8 +44,9 @@ const aboutPage = () => {
                   </a>
                </Box>
             </Grid2>
-         </List></Grid2>
-         <Grid2 item xs={12} sm={4} size={4} sx={{ justifyContent: 'flex-end' }}><ContactForm /></Grid2>
+         </List>
+         </Grid2>
+         <Grid2 className='rightContent' item xs={1} sm={1} size={4}><ContactForm /></Grid2>
       </Grid2>
    )
 }

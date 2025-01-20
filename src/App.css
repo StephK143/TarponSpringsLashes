@@ -1,5 +1,9 @@
+.body {
+  background: url(./assets/floral-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .app {
-  text-align: center;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -8,14 +12,19 @@
 }
 .content {
   display: flex;
-  height: 80vh;
+  height: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   padding: 4rem;
-  background: url(./assets/floral-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.leftContent {
+  text-align: left;
+  width: 50%;
+}
+.rightContent {
+  text-align: right;
+  width: 50%;
 }
 .appFooter {
   display: flex;
@@ -28,4 +37,5 @@
   font-size: calc(10px + 2vmin);
   color: #ffffff;
   background-color: #767676;
+  padding: 1rem;
 }

@@ -5,17 +5,18 @@ import HomePage from './pages/home';
 import GalleryPage from './pages/gallery';
 import AboutPage from './pages/about';
 import ErrorPage from "./pages/error";
+import { Box } from "@mui/material";
 
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePage className="content" />} errorElement={<ErrorPage />}  />
-          <Route path='/gallery' element={<GalleryPage className="content" />} errorElement={<ErrorPage />}  />
-          <Route path='/about' element={<AboutPage className="content" />} errorElement={<ErrorPage />}  />
+          <Route path='/' element={<HomePage className="content" />} errorElement={<ErrorPage />} />
+          <Route path='/gallery' element={<GalleryPage className="content" />} errorElement={<ErrorPage />} />
+          <Route path='/about' element={<AboutPage className="content" />} errorElement={<ErrorPage />} />
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
   );
 }
 

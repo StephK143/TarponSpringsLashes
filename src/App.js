@@ -10,7 +10,7 @@ function App() {
   return (
     <Box className="app" container>
       <AppHeader />
-        <AppRouter />
+      <AppRouter />
       <AppFooter />
     </Box>
   );
