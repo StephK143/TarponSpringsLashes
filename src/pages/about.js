@@ -9,17 +9,10 @@ const aboutPage = () => {
 
    return (
       <Grid2
+         className='content'
          container
-         sx={{
-            height: '100vh',
-            backgroundImage: `url(${cover})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            flexDirection: 'row',
-            display: 'flex',
-            justifyContent: 'space-between',
-         }}>
-         <List sx={{ flexDirection: 'column', width: '50%', justifyContent: 'flex-start' }}>
+         spacing={2}>
+         <Grid2 item xs={12} sm={4} size={4}> <List sx={{ flexDirection: 'column', width: '50%', justifyContent: 'flex-start' }}>
             <ListItem>
                <Typography>{AboutData.shortDescription}</Typography>
             </ListItem>
@@ -34,7 +27,7 @@ const aboutPage = () => {
                   sx={{
                      flexDirection: 'column',
                      justifyContent: 'flex-end',
-                     width: '40%',
+                     width: '50%',
                      cursor: 'pointer',
                   }}>
                   <a href={`${LocationData.locationMapLink}`} target="blank" rel="noopener noreferrer">
@@ -43,8 +36,7 @@ const aboutPage = () => {
                         role='button'
                         sx={{
                            display: 'block',
-                           ml: 'auto',
-                           mr: 'auto',
+                           p: '1rem 0',
                            width: '50%',
                         }}
                         alt="Map to Allure Salon."
@@ -53,10 +45,8 @@ const aboutPage = () => {
                   </a>
                </Box>
             </Grid2>
-         </List>
-         <List sx={{ flexDirection: 'column', justifyContent: 'flex-end', width: '40%' }}>
-            <ContactForm />
-         </List>
+         </List></Grid2>
+         <Grid2 item xs={12} sm={4} size={4} sx={{ justifyContent: 'flex-end' }}><ContactForm /></Grid2>
       </Grid2>
    )
 }
