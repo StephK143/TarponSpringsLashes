@@ -14,32 +14,38 @@ export const testimonials =
     [
         {
             clientName: "Client 1",
-            clientImage: "",
-            clientReview: "Emily Rocks"
+            clientImage: "../assets/Lashes1.png",
+            clientReview: "Emily Rocks",
+            imageAltText: "Women's eye with lash extensions"
         },
         {
             clientName: "Client 2",
-            clientImage: "",
-            clientReview: "Super! Super!"
+            clientImage: "../assets/Lashes2.png",
+            clientReview: "Super! Super!",
+            imageAltText: "Women's eye with lash extensions"
         },
         {
             clientName: "Client 3",
-            clientImage: "",
-            clientReview: "Would recommend, 100%"
+            clientImage: "../assets/Lashes3.png",
+            clientReview: "Would recommend, 100%",
+            imageAltText: "Women's eye with lash extensions"
         },
         {
             clientName: "Client 4",
-            clientImage: "",
-            clientReview: "Emily Rocks"
+            clientImage: "../assets/Lashes4.png",
+            clientReview: "Emily Rocks",
+            imageAltText: "Women's eye with lash extensions"
         },
         {
             clientName: "Client 5",
-            clientImage: "",
-            clientReview: "Super! Super!"
+            clientImage: "../assets/Lashes5.png",
+            clientReview: "Super! Super!",
+            imageAltText: "Women's eye with lash extensions"
         },
         {
             clientName: "Client 6",
-            clientImage: "",
-            clientReview: "Would recommend, 100%"
+            clientImage: "../assets/Lashes1.png",
+            clientReview: "Would recommend, 100%",
+            imageAltText: "Women's eye with lash extensions"
         }
     ]

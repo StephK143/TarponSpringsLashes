@@ -1,35 +1,35 @@
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { testimonials } from '../components/data';
 
+function ReviewCard(props) {
+    return (
+        <Card sx={{ display: 'flex', wordWrap: 'break-word', width: '100%' }}>
+            <CardMedia
+                component="img"
+                alt={props.item.imageAltText}
+                src={props.item.image}
+                sx={{ height: 90, width: '40%' }}
+            />
+            <CardContent sx={{ display: 'flex', flexDirection: 'column', width: '60%', textAlign: 'center' }}>
+                <Typography gutterBottom variant="h6" component="div">
+                    {props.item.clientReview}
+                </Typography>
+                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 'bold', textAlign: 'right' }}>
+                    {props.item.clientName}
+                </Typography>
+            </CardContent>
+        </Card>
+)}
+
 const ReviewCarousel = () => {
     return (
-        <Box>
-            <Carousel>
-                {
-                    testimonials.map((item, i) =>
-                        <Card key={i} item={item} sx={{ maxWidth: 350, maxHeight: 100 }}>
-                            <CardMedia
-                                component="img"
-                                alt="Women's eye with lash extensions"
-                                image={testimonials.clientImage}
-                                sx={{ height: 20, width: 150 }}
-                            />
-                            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        {item.clientReview}
-                                    </Typography>
-                                    <Typography variant="body2" sx={{ color: 'text.secondary', float: 'right' }}>
-                                        {item.clientName}
-                                    </Typography>
-                                </CardContent>
-                            </Box>
-                        </Card>
-                    )}
-            </Carousel>
-        </Box>
+        <Carousel>
+            {
+                testimonials.map((item, i) => <ReviewCard key={i} item={item} />)
+            }
+        </Carousel>
     )
 }
 
